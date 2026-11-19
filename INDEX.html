@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PJOK Kelas X | Media Pembelajaran</title>
+<style>
+:root{--green:#087f5b;--dark:#12352b;--mint:#e8f5ef;--gold:#f4b942;--ink:#20312b;--muted:#65756e;--white:#fff;--line:#e2ebe6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f9f7;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{background:linear-gradient(120deg,#073b2c,#0b805b);color:white;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;z-index:5;box-shadow:0 3px 15px #12352b25}
+.brand{font-weight:800;font-size:19px}.brand span{color:#f9d36c}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:#ffdc82}
+.hero{padding:65px 7%;background:linear-gradient(90deg,#073b2cdd,#073b2c88),url('https://images.unsplash.com/photo-146域');background:linear-gradient(110deg,#073b2c,#0d7554 70%,#15936a);color:white;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.12;margin:8px 0 18px}.hero p{max-width:650px;color:#e2f3eb}.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff55;padding:6px 13px;border-radius:30px;font-size:13px}.hero img{width:100%;max-height:300px;object-fit:cover;border-radius:24px;box-shadow:0 15px 35px #001b13aa}
+.btn{display:inline-block;background:var(--gold);color:#24352d;text-decoration:none;border:0;padding:11px 18px;border-radius:10px;font-weight:700;cursor:pointer;margin:5px 5px 0 0}.btn.secondary{background:white;color:var(--green)}
+.container{width:min(1150px,90%);margin:42px auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:20px}.section-head h2{margin:0;color:var(--dark);font-size:27px}.section-head p{margin:4px 0;color:var(--muted)}
+.search{width:min(340px,100%);padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #12352b0a}.card img{width:100%;height:165px;object-fit:cover;background:var(--mint)}.card-body{padding:17px}.card h3{margin:0 0 7px;color:var(--dark)}.card p{margin:0 0 12px;color:var(--muted);font-size:14px}.pill{font-size:11px;background:var(--mint);color:var(--green);padding:4px 9px;border-radius:20px;font-weight:700}
+.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;margin:18px 0}.panel h3{color:var(--dark);margin-top:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.list{padding-left:20px}.list li{margin:7px 0}.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:13px;background:#102a22}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-note{font-size:13px;color:var(--muted)}
+.topic{display:none}.topic.active{display:block}.topic h2{color:var(--green)}.topic-image{width:100%;max-height:300px;object-fit:cover;border-radius:14px}
+.quiz-q{padding:15px 0;border-bottom:1px solid var(--line)}.quiz-q label{display:block;margin:6px 0;cursor:pointer}.result{font-weight:700;margin-top:15px;color:var(--green)}
+footer{background:#092f24;color:#d8e9e1;padding:30px 7%;text-align:center;margin-top:55px}footer p{margin:5px}
+@media(max-width:800px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{grid-template-columns:1fr;padding:45px 6%}.hero img{max-height:220px}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.container{width:92%}.hero h1{font-size:35px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">PJOK <span>KELAS X</span></div>
+  <nav>
+    <a href="#beranda">Beranda</a><a href="#materi">Materi</a><a href="#video">Video</a><a href="#kuis">Kuis</a>
+  </nav>
+</header>
+
+<section class="hero" id="beranda">
+  <div>
+    <span class="tag">MEDIA PEMBELAJARAN SMA / SMK</span>
+    <h1>Belajar Aktif,<br>Sehat, dan Sportif.</h1>
+    <p>Jelajahi materi Pendidikan Jasmani, Olahraga, dan Kesehatan kelas X. Pelajari teknik dasar olahraga, tingkatkan kebugaran, dan terapkan pola hidup sehat.</p>
+    <a class="btn" href="#materi">Mulai Belajar</a>
+    <a class="btn secondary" href="#kuis">Kerjakan Kuis</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1000&q=85" alt="Pemain sepak bola sedang berolahraga">
+</section>
+
+<main>
+<section class="container" id="materi">
+  <div class="section-head"><div><h2>Materi Pembelajaran</h2><p>Pilih salah satu bab untuk membaca materi.</p></div><input class="search" id="search" type="search" placeholder="Cari materi olahraga..."></div>
+  <div class="grid" id="cards">
+    <article class="card" data-title="sepak bola"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80" alt="Sepak bola"><div class="card-body"><span class="pill">BAB 1</span><h3>Sepak Bola</h3><p>Teknik dasar, peraturan, strategi, dan nilai sportivitas.</p><button class="btn" onclick="showTopic('sepak')">Pelajari</button></div></article>
+    <article class="card" data-title="bola voli"><img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=800&q=80" alt="Bola voli"><div class="card-body"><span class="pill">BAB 2</span><h3>Bola Voli</h3><p>Passing, servis, smash, blocking, dan permainan.</p><button class="btn" onclick="showTopic('voli')">Pelajari</button></div></article>
+    <article class="card" data-title="bola basket"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80" alt="Bola basket"><div class="card-body"><span class="pill">BAB 3</span><h3>Bola Basket</h3><p>Dribbling, passing, shooting, pivot, dan aturan.</p><button class="btn" onclick="showTopic('basket')">Pelajari</button></div></article>
+    <article class="card" data-title="bulu tangkis badminton"><img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80" alt="Bulu tangkis"><div class="card-body"><span class="pill">BAB 4</span><h3>Bulu Tangkis</h3><p>Grip, footwork, servis, lob, dropshot, dan smash.</p><button class="btn" onclick="showTopic('bulu')">Pelajari</button></div></article>
+    <article class="card" data-title="atletik lari lompat lempar"><img src="https://images.unsplash.com/photo-1533561052604-c3beb6d55b8d?auto=format&fit=crop&w=800&q=80" alt="Atletik lari"><div class="card-body"><span class="pill">BAB 5</span><h3>Atletik</h3><p>Jalan, lari, lompat, dan lempar sebagai dasar gerak.</p><button class="btn" onclick="showTopic('atletik')">Pelajari</button></div></article>
+    <article class="card" data-title="pencak silat bela diri"><img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=800&q=80" alt="Bela diri"><div class="card-body"><span class="pill">BAB 6</span><h3>Pencak Silat</h3><p>Sikap dasar, kuda-kuda, pukulan, tendangan, dan tangkisan.</p><button class="btn" onclick="showTopic('silat')">Pelajari</button></div></article>
+    <article class="card" data-title="kebugaran jasmani latihan"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Latihan kebugaran"><div class="card-body"><span class="pill">BAB 7</span><h3>Kebugaran Jasmani</h3><p>Komponen kebugaran dan prinsip latihan FITT.</p><button class="btn" onclick="showTopic('bugar')">Pelajari</button></div></article>
+    <article class="card" data-title="senam lantai"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Senam"><div class="card-body"><span class="pill">BAB 8</span><h3>Senam Lantai</h3><p>Guling depan, guling belakang, sikap lilin, dan kayang.</p><button class="btn" onclick="showTopic('senam')">Pelajari</button></div></article>
+    <article class="card" data-title="renang keselamatan air"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80" alt="Renang"><div class="card-body"><span class="pill">BAB 9</span><h3>Aktivitas Air</h3><p>Keselamatan di air dan pengenalan gaya renang.</p><button class="btn" onclick="showTopic('renang')">Pelajari</button></div></article>
+    <article class="card" data-title="kesehatan pola hidup sehat napza p3k"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Pola hidup sehat"><div class="card-body"><span class="pill">BAB 10</span><h3>Pola Hidup Sehat</h3><p>Gizi seimbang, kebersihan, NAPZA, dan pertolongan pertama.</p><button class="btn" onclick="showTopic('sehat')">Pelajari</button></div></article>
+  </div>
+</section>
+
+<section class="container" id="detail">
+  <div class="panel">
+    <div id="empty"><h2>Petunjuk Belajar</h2><p>Pilih tombol <b>Pelajari</b> pada salah satu materi di atas. Materi akan tampil di bagian ini.</p><p>Biasakan membaca tujuan pembelajaran, memahami konsep, lalu mempraktikkan gerakan dengan pengawasan guru.</p></div>
+    <div class="topic" id="sepak"><h2>Bab 1 – Sepak Bola</h2><img class="topic-image" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=80" alt="Sepak bola"><h3>Pengertian</h3><p>Sepak bola adalah permainan beregu yang dimainkan dua tim, masing-masing terdiri atas 11 pemain. Tujuannya memasukkan bola ke gawang lawan dan mencegah lawan mencetak gol.</p><h3>Teknik dasar</h3><ul class="list"><li><b>Passing:</b> mengoper bola menggunakan kaki bagian dalam, luar, atau punggung kaki.</li><li><b>Dribbling:</b> menggiring bola dengan sentuhan terkontrol.</li><li><b>Shooting:</b> menendang bola ke arah gawang.</li><li><b>Controlling:</b> menghentikan atau menguasai bola.</li><li><b>Heading:</b> memainkan bola menggunakan dahi dengan teknik yang benar.</li></ul><h3>Peraturan dan keselamatan</h3><p>Pertandingan standar berlangsung 2 × 45 menit. Pemain tidak boleh menyentuh bola dengan tangan secara sengaja, kecuali penjaga gawang di area penalti sendiri. Lakukan pemanasan dan gunakan perlengkapan yang sesuai.</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu menjelaskan aturan dasar, mempraktikkan passing, dribbling, controlling, dan shooting, serta menunjukkan kerja sama dan sportivitas.</p></div>
+    <div class="topic" id="voli"><h2>Bab 2 – Bola Voli</h2><img class="topic-image" src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=1000&q=80" alt="Bola voli"><h3>Pengertian</h3><p>Bola voli merupakan permainan dua regu yang dipisahkan net. Setiap regu berusaha menjatuhkan bola di area lawan dan mencegah bola jatuh di lapangannya sendiri.</p><h3>Teknik dasar</h3><ul class="list"><li><b>Passing bawah:</b> kedua lengan dirapatkan untuk menerima bola rendah.</li><li><b>Passing atas:</b> jari-jari terbuka di atas dahi untuk mendorong bola.</li><li><b>Servis:</b> pukulan awal untuk memulai reli.</li><li><b>Smash:</b> pukulan menyerang ke area lawan.</li><li><b>Blocking:</b> membendung serangan lawan di dekat net.</li></ul><p>Permainan umumnya menggunakan sistem rally point hingga 25 poin dan harus unggul dua poin; set penentuan biasanya hingga 15 poin. Format kompetisi dapat mengikuti peraturan yang berlaku.</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu melakukan passing dan servis dasar, memahami rotasi, serta bekerja sama dalam tim.</p></div>
+    <div class="topic" id="basket"><h2>Bab 3 – Bola Basket</h2><img class="topic-image" src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1000&q=80" alt="Bola basket"><h3>Pengertian</h3><p>Bola basket adalah permainan beregu yang bertujuan memasukkan bola ke keranjang lawan dan menjaga keranjang sendiri.</p><h3>Teknik dasar</h3><ul class="list"><li><b>Dribbling:</b> memantulkan bola ke lantai dengan satu tangan.</li><li><b>Passing:</b> operan dada, pantul, dan atas kepala.</li><li><b>Shooting:</b> menembakkan bola ke ring.</li><li><b>Lay-up:</b> tembakan dekat ring setelah dua langkah.</li><li><b>Pivot:</b> gerakan berputar dengan satu kaki sebagai poros.</li></ul><p>Satu tim memainkan lima pemain di lapangan. Hindari berjalan atau berlari sambil memegang bola tanpa melakukan dribble (traveling).</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu mengombinasikan dribble, passing, dan shooting serta memahami kerja sama dan aturan permainan.</p></div>
+    <div class="topic" id="bulu"><h2>Bab 4 – Bulu Tangkis</h2><img class="topic-image" src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1000&q=80" alt="Bulu tangkis"><h3>Pengertian</h3><p>Bulu tangkis dimainkan tunggal atau ganda menggunakan raket dan shuttlecock. Pemain berusaha membuat shuttlecock jatuh di bidang permainan lawan.</p><h3>Teknik dasar</h3><ul class="list"><li><b>Grip:</b> cara memegang raket forehand dan backhand.</li><li><b>Footwork:</b> langkah kaki untuk menjangkau shuttlecock.</li><li><b>Servis:</b> pukulan pembuka reli.</li><li><b>Lob/clear:</b> pukulan tinggi ke belakang lapangan lawan.</li><li><b>Dropshot:</b> pukulan pelan yang jatuh dekat net.</li><li><b>Smash:</b> pukulan keras dan menukik.</li></ul><p>Sistem skor umum menggunakan best of three games hingga 21 poin, dengan keunggulan dua poin dan batas 30.</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu mempraktikkan pegangan raket, servis, gerak kaki, dan pukulan dasar.</p></div>
+    <div class="topic" id="atletik"><h2>Bab 5 – Atletik</h2><img class="topic-image" src="https://images.unsplash.com/photo-1533561052604-c3beb6d55b8d?auto=format&fit=crop&w=1000&q=80" alt="Atlet berlari"><h3>Pengertian</h3><p>Atletik sering disebut induk olahraga karena mencakup gerak dasar manusia: berjalan, berlari, melompat, dan melempar.</p><h3>Nomor dan teknik</h3><ul class="list"><li><b>Lari jarak pendek:</b> start jongkok, akselerasi, berlari cepat, dan memasuki garis finis.</li><li><b>Lari jarak menengah:</b> mengatur kecepatan dan irama napas.</li><li><b>Lompat jauh:</b> awalan, tolakan satu kaki, melayang, dan mendarat.</li><li><b>Tolak peluru:</b> peluru ditolak dari dekat bahu, bukan dilempar seperti bola.</li></ul><h3>Keselamatan</h3><p>Periksa lintasan dan area pendaratan, lakukan pemanasan, gunakan teknik yang benar, dan beri jarak aman antarpeserta.</p><h3>Tujuan pembelajaran</h3><p>Siswa memahami fase gerak atletik dan mampu mempraktikkan keterampilan dasar sesuai kemampuan.</p></div>
+    <div class="topic" id="silat"><h2>Bab 6 – Pencak Silat</h2><img class="topic-image" src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1000&q=80" alt="Latihan bela diri"><h3>Pengertian</h3><p>Pencak silat adalah seni bela diri tradisional Indonesia yang mengembangkan kemampuan fisik, keterampilan membela diri, disiplin, dan budi pekerti.</p><h3>Gerak dasar</h3><ul class="list"><li><b>Kuda-kuda:</b> posisi kaki untuk menjaga keseimbangan.</li><li><b>Sikap pasang:</b> posisi siap menghadapi gerakan lawan.</li><li><b>Pola langkah:</b> mengatur perpindahan posisi.</li><li><b>Pukulan dan tendangan:</b> serangan yang dilakukan dengan kontrol.</li><li><b>Tangkisan dan elakan:</b> melindungi diri atau menghindari serangan.</li></ul><p>Latihan berpasangan harus dilakukan terkendali, menggunakan pelindung bila diperlukan, dan di bawah pengawasan guru.</p><h3>Tujuan pembelajaran</h3><p>Siswa mengenal budaya pencak silat, menguasai sikap dasar, serta menghargai keselamatan pasangan latihan.</p></div>
+    <div class="topic" id="bugar"><h2>Bab 7 – Kebugaran Jasmani</h2><img class="topic-image" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80" alt="Latihan kebugaran"><h3>Pengertian</h3><p>Kebugaran jasmani adalah kemampuan tubuh melakukan aktivitas sehari-hari secara efektif tanpa kelelahan berlebihan dan masih memiliki cadangan tenaga.</p><h3>Komponen kebugaran</h3><ul class="list"><li><b>Daya tahan:</b> kemampuan bekerja dalam waktu lama.</li><li><b>Kekuatan:</b> kemampuan otot menghasilkan tenaga.</li><li><b>Daya ledak:</b> gabungan kekuatan dan kecepatan.</li><li><b>Kecepatan:</b> kemampuan bergerak dalam waktu singkat.</li><li><b>Kelentukan:</b> luas gerak persendian.</li><li><b>Kelincahan dan keseimbangan:</b> kemampuan mengubah arah dan mempertahankan posisi.</li></ul><h3>Prinsip latihan FITT</h3><p><b>Frequency</b> (frekuensi), <b>Intensity</b> (intensitas), <b>Time</b> (durasi), dan <b>Type</b> (jenis latihan). Tingkatkan beban bertahap, sertakan pemanasan dan pendinginan, serta sesuaikan dengan kondisi tubuh.</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu mengidentifikasi komponen kebugaran dan menyusun latihan sederhana yang aman.</p></div>
+    <div class="topic" id="senam"><h2>Bab 8 – Senam Lantai</h2><img class="topic-image" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1000&q=80" alt="Aktivitas senam"><h3>Pengertian</h3><p>Senam lantai merupakan aktivitas senam yang dilakukan di atas matras dengan gerakan berguling, bertumpu, menjaga keseimbangan, dan kelentukan.</p><h3>Gerakan dasar</h3><ul class="list"><li><b>Guling depan:</b> berguling ke depan dengan dagu mendekati dada dan punggung membulat.</li><li><b>Guling belakang:</b> berguling ke belakang dengan bantuan tangan di samping telinga.</li><li><b>Sikap lilin:</b> tubuh bertumpu pada bahu dengan kaki lurus ke atas.</li><li><b>Kayang:</b> posisi melenting dengan tumpuan kedua tangan dan kaki.</li></ul><p>Gunakan matras, lepaskan benda berbahaya, dan minta bantuan guru atau pendamping. Jangan memaksakan gerakan yang belum dikuasai.</p><h3>Tujuan pembelajaran</h3><p>Siswa memahami urutan gerak, meningkatkan koordinasi dan kelentukan, serta mempraktikkan gerakan sesuai tingkat kemampuan.</p></div>
+    <div class="topic" id="renang"><h2>Bab 9 – Aktivitas Air</h2><img class="topic-image" src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1000&q=80" alt="Kolam renang"><h3>Pengertian</h3><p>Aktivitas air meliputi keterampilan bergerak di air, pengenalan teknik renang, dan pemahaman keselamatan di lingkungan perairan.</p><h3>Dasar keterampilan</h3><ul class="list"><li>Adaptasi air dan membiasakan wajah terkena air.</li><li>Latihan mengembuskan napas di dalam air.</li><li>Meluncur dengan posisi tubuh lurus.</li><li>Mengenal gerakan kaki dan lengan gaya bebas, dada, punggung, atau kupu-kupu.</li></ul><h3>Keselamatan air</h3><p>Jangan berenang sendirian, patuhi instruksi pengawas, kenali kedalaman kolam, hindari berlari di tepi kolam, dan jangan masuk ke air jika kondisi tubuh tidak fit. Siswa yang belum bisa berenang harus berada di area aman dengan pendampingan langsung.</p><h3>Tujuan pembelajaran</h3><p>Siswa memahami keselamatan air dan mengenal prinsip gerak dasar renang.</p></div>
+    <div class="topic" id="sehat"><h2>Bab 10 – Pola Hidup Sehat</h2><img class="topic-image" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80" alt="Kesehatan dan kebugaran"><h3>Perilaku hidup sehat</h3><ul class="list"><li>Konsumsi makanan beragam dengan gizi seimbang dan cukup air.</li><li>Aktif bergerak secara teratur dan kurangi duduk terlalu lama.</li><li>Jaga kebersihan diri dan lingkungan.</li><li>Istirahat cukup dan kelola stres dengan cara sehat.</li><li>Hindari rokok, alkohol, serta penyalahgunaan NAPZA.</li></ul><h3>NAPZA</h3><p>NAPZA adalah narkotika, psikotropika, dan zat adiktif lainnya. Penyalahgunaan dapat merusak kesehatan fisik, mental, hubungan sosial, dan masa depan. Berani menolak ajakan, pilih lingkungan positif, dan cari bantuan orang dewasa tepercaya atau tenaga kesehatan.</p><h3>Pertolongan pertama</h3><p>Pastikan lokasi aman, periksa respons korban, minta bantuan guru atau petugas, dan hubungi layanan darurat bila diperlukan. Jangan memindahkan korban dengan dugaan cedera tulang belakang kecuali ada bahaya langsung. Penanganan luka atau cedera serius harus dilakukan tenaga terlatih.</p><h3>Tujuan pembelajaran</h3><p>Siswa mampu menjelaskan kebiasaan hidup sehat, risiko penyalahgunaan zat, dan prinsip awal mencari pertolongan.</p></div>
+  </div>
+</section>
+
+<section class="container" id="video">
+ <div class="section-head"><div><h2>Video Pembelajaran</h2><p>Pilih topik untuk membuka pencarian video pembelajaran.</p></div></div>
+ <div class="grid">
+  <div class="card"><div class="card-body"><h3>Teknik Sepak Bola</h3><p>Passing, dribbling, dan shooting.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=pembelajaran+teknik+dasar+sepak+bola">Tonton Video</a></div></div>
+  <div class="card"><div class="card-body"><h3>Teknik Bola Voli</h3><p>Passing bawah, passing atas, dan servis.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=pembelajaran+teknik+dasar+bola+voli">Tonton Video</a></div></div>
+  <div class="card"><div class="card-body"><h3>Teknik Bola Basket</h3><p>Dribble, passing, dan shooting.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=pembelajaran+teknik+dasar+bola+basket">Tonton Video</a></div></div>
+  <div class="card"><div class="card-body"><h3>Atletik Lari</h3><p>Start, teknik berlari, dan finis.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=pembelajaran+atletik+lari+kelas+10">Tonton Video</a></div></div>
+  <div class="card"><div class="card-body"><h3>Kebugaran Jasmani</h3><p>Latihan daya tahan, kekuatan, dan kelentukan.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=latihan+kebugaran+jasmani+pjok+sma">Tonton Video</a></div></div>
+  <div class="card"><div class="card-body"><h3>Senam Lantai</h3><p>Contoh gerakan dan keselamatan latihan.</p><a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=pembelajaran+senam+lantai+pjok">Tonton Video</a></div></div>
+ </div>
+ <p class="video-note">Catatan: video dibuka melalui YouTube sehingga memerlukan koneksi internet. Pilih video yang sesuai usia dan arahan guru.</p>
+</section>
+
+<section class="container" id="kuis">
+ <div class="section-head"><div><h2>Kuis Evaluasi PJOK</h2><p>Jawab semua pertanyaan, lalu tekan tombol periksa jawaban.</p></div></div>
+ <div class="panel">
+ <form id="quiz">
+  <div class="quiz-q"><b>1. Berapa jumlah pemain sepak bola dalam satu tim di lapangan?</b><label><input type="radio" name="q1" value="a"> A. 5 pemain</label><label><input type="radio" name="q1" value="b"> B. 11 pemain</label><label><input type="radio" name="q1" value="c"> C. 7 pemain</label></div>
+  <div class="quiz-q"><b>2. Teknik menerima bola rendah dalam bola voli disebut ...</b><label><input type="radio" name="q2" value="a"> A. Smash</label><label><input type="radio" name="q2" value="b"> B. Blocking</label><label><input type="radio" name="q2" value="c"> C. Passing bawah</label></div>
+  <div class="quiz-q"><b>3. Gerakan memantulkan bola ke lantai dalam basket disebut ...</b><label><input type="radio" name="q3" value="a"> A. Dribbling</label><label><input type="radio" name="q3" value="b"> B. Heading</label><label><input type="radio" name="q3" value="c"> C. Blocking</label></div>
+  <div class="quiz-q"><b>4. Atletik terdiri atas gerak dasar berikut, kecuali ...</b><label><input type="radio" name="q4" value="a"> A. Berlari</label><label><input type="radio" name="q4" value="b"> B. Melompat</label><label><input type="radio" name="q4" value="c"> C. Menggiring bola</label></div>
+  <div class="quiz-q"><b>5. Dalam prinsip latihan FITT, huruf F berarti ...</b><label><input type="radio" name="q5" value="a"> A. Frequency</label><label><input type="radio" name="q5" value="b"> B. Flexibility</label><label><input type="radio" name="q5" value="c"> C. Fitness</label></div>
+  <div class="quiz-q"><b>6. Alat yang digunakan sebagai alas aman senam lantai adalah ...</b><label><input type="radio" name="q6" value="a"> A. Net</label><label><input type="radio" name="q6" value="b"> B. Matras</label><label><input type="radio" name="q6" value="c"> C. Raket</label></div>
+  <div class="quiz-q"><b>7. Sikap yang tepat ketika berenang adalah ...</b><label><input type="radio" name="q7" value="a"> A. Berenang sendirian</label><label><input type="radio" name="q7" value="b"> B. Bercanda mendorong teman</label><label><input type="radio" name="q7" value="c"> C. Mengikuti arahan pengawas</label></div>
+  <div class="quiz-q"><b>8. Salah satu cara menjaga kesehatan adalah ...</b><label><input type="radio" name="q8" value="a"> A. Makan bergizi dan aktif bergerak</label><label><input type="radio" name="q8" value="b"> B. Kurang tidur setiap hari</label><label><input type="radio" name="q8" value="c"> C. Menghindari semua aktivitas fisik</label></div>
+  <button class="btn" type="submit">Periksa Jawaban</button>
+  <button class="btn secondary" type="reset" onclick="document.getElementById('result').textContent=''">Ulangi Kuis</button>
+ </form><div class="result" id="result" aria-live="polite"></div>
+ </div>
+</section>
+</main>
+<footer><p><b>MEDIA PEMBELAJARAN PJOK KELAS X</b></p><p>Belajar • Bergerak • Sehat • Sportif</p><p>Materi dapat disesuaikan dengan kurikulum dan modul ajar yang digunakan sekolah.</p></footer>
+<script>
+function showTopic(id){
+ document.querySelectorAll('.topic').forEach(t=>t.classList.remove('active'));
+ document.getElementById('empty').style.display='none';
+ document.getElementById(id).classList.add('active');
+ document.getElementById('detail').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('search').addEventListener('input',function(){
+ const q=this.value.toLowerCase();
+ document.querySelectorAll('#cards .card').forEach(card=>{
+  card.style.display=card.dataset.title.includes(q)?'':'none';
+ });
+});
+document.getElementById('quiz').addEventListener('submit',function(e){
+ e.preventDefault();
+ const answers={q1:'b',q2:'c',q3:'a',q4:'c',q5:'a',q6:'b',q7:'c',q8:'a'};
+ let score=0,answered=0;
+ for(const [key,val] of Object.entries(answers)){
+  const chosen=this.querySelector('input[name="'+key+'"]:checked');
+  if(chosen){answered++;if(chosen.value===val)score++;}
+ }
+ const result=document.getElementById('result');
+ if(answered<8){result.textContent='Silakan jawab semua 8 pertanyaan terlebih dahulu. ('+answered+'/8 terjawab)';return;}
+ result.textContent='Nilai kamu: '+(score/8*100)+' — '+score+' dari 8 jawaban benar. '+(score>=6?'Bagus! Terus pertahankan.':'Tetap semangat, pelajari kembali materinya ya!');
+});
+</script>
+</body>
+</html>
